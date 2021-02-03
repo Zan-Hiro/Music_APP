@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Music APP</title>
+</head>
+<body>
+  <div class="music-container">
+    <div class="music-content">
+      <div id="bg-image">
+        <div id="blackLayer"></div>
+        <img src="./images/ncs1.jpeg" alt="" id="bgImage">
+      </div>
+      <div id="menu">
+        <img src="./images/menu.png" alt="">
+        <img src="./images/search.png" alt="">
+      </div>
+      <div id="volume-container">
+        <img src="./images/volume-low.png" alt="" id="volumn-down">
+        <input type="range" class="slider" id="volumeslider" min="0" max="100" value="100" step="1">
+        <img src="./images/volumn-high.png" alt="" id="volumn-up">
+      </div>
+      <div id="music-image">
+        <div id="circle-image">
+          <img src="./images/ncs1.jpeg" alt="" id="image">
+        </div>
+        <div id="music-title">
+          <h5 id="playlist_status"></h5>
+          <h6 id="playlist_artist"></h6>
+        </div>
+      </div>
+      <div id="music-menu">
+        <button id="random"><img src="./images/random.png" alt=""></button>
+        <button id="mutebtn"><img src="./images/speaker.png" alt="" id="mutebtnImg"></button>
+      </div>
+      <div id="currentTime">
+        <span id="curtimetext">00:00</span>
+        <span id="durtimeText">00:00</span>
+      </div>
+      <input type="range" class="seekslider" id="seekslider" min="0" max="100" value="0" step="1">
+      <div id="buttons">
+        <button class="repeat" id="repeat"><img src="./images/rep.png" alt="" id="repeatImg"></button>
+        <div>
+          <button class="pre" id="prevbtn"><img src="./images/backward.png" alt=""></button>
+          <button class="play" id="playpausebtn"><img src="./images/play-red.png" alt="" id="playpausebtnImg"></button>
+          <button class="next" id="nexbtn"><img src="./images/forward.png" alt=""></button>
+        </div>
+        <span class="like">
+          <i class="far fa-heart" aria-hidden="true"></i>
+        </span>
+    </div>
+    </div>
+  </div>
+  <script src="javascript/script.js"></script>
+</body>
+</html>
